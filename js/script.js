@@ -9,10 +9,10 @@ PizzaOrder.prototype.order = function(){
 
 
 
-// //User Interface Logic
-// $(document).ready(function() {
-//   $("form#showOrder1").submit(function(event) {
-//     event.preventDefault();
+//User Interface Logic
+$(document).ready(function() {
+  $("form#showOrder1").submit(function(event) {
+    event.preventDefault();
 //     let size = $("#size").val();
 //     let crust = $("#crust").val();
 //     let topping = $("#toppings").val();
