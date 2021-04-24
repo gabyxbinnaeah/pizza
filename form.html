@@ -58,15 +58,31 @@
             
 
               </form>
-
-             <div class="col-md-6  form-group">
-                        <label for="inputState">To be delivered ?</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1">Yes</option>
-                            <option value="2">No</option>
-                          </select>
-                          <button class="btn btn-warning" id="viewbtn">View chart</b>     
-            </div> 
+            <div class="row">
+                <div class="col-md-6  form-group">
+                    <label for="inputState">To be delivered ?</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                      </select>
+                          
+                </div> 
+                <div class="col-md-3 viewbtn">
+                    <button class="btn btn-warning" id="viewbtn">Submit</button> 
+                </div>
+                <div class="row" id="location">
+                    <div class="col-md-6  form-group">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter your Location</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="location">  
+                        </div>
+                              
+                    </div> 
+                    <div class="col-md-3 namesubmit">
+                        <button class="btn btn-warning" id="viewbtn">Location</button> 
+                    </div>
+            </div>
+            
         </div>
     
     </div>

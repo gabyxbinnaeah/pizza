@@ -39,3 +39,26 @@
     background-size: cover;
     border-radius: 10px;
 }
+
+#menu{
+    margin-top: 40px;
+}
+.dierective{
+   height: 40px;
+   width: 100%;
+   text-align: center;
+   margin-top: 20px;
+   padding-top: 5px;
+   text-transform: capitalize;
+}
+.send{
+   text-align: center;
+   margin-top: 10px;
+   height: 70px;
+}
+#viewbtn{
+  margin-top: 25px;
+}
+#location{
+    /* display: none; */
+}
