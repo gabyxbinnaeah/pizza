@@ -56,9 +56,28 @@
    margin-top: 10px;
    height: 70px;
 }
+#viewbtn1{
+    margin-top: 20px;
+}
 #viewbtn{
-  margin-top: 25px;
+  margin-top: 2px;
 }
 #location{
-    /* display: none; */
+     /* display: none;  */
+     margin-top: 30px;
+}
+.chec{
+    height: 50px;
+    text-align: center;
+
+}
+.lastouput{
+    margin-top: 10px;
+}
+.show-display{
+    height: 100px;
+}
+#show-display{
+    display: none;
+    background-color:rgba(128, 128, 128, 0.082);
 }
