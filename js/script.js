@@ -36,15 +36,15 @@ $(document).ready(function() {
     else if (topping === "3") {
       toppingCost += 300;
     }
-//     if (size === "1") {
-//       toppingCost = toppingCost*1.5;
-//     }
-//     else if (size === "2") {
-//       toppingCost = toppingCost*2.5;
-//     }
-//     else if (size === "3" ) {
-//       toppingCost = toppingCost*3.5;
-//     }
+    if (size === "1") {
+      toppingCost = toppingCost*1.5;
+    }
+    else if (size === "2") {
+      toppingCost = toppingCost*2.5;
+    }
+    else if (size === "3" ) {
+      toppingCost = toppingCost*3.5;
+    }
 
 //     let newOrder = new PizzaOrder(crustCost,toppingCost);
 //    // $("#user").text("Account Name: " + userName);
