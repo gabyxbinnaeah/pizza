@@ -47,7 +47,7 @@ $(document).ready(function() {
     }
 
     let newOrder = new PizzaOrder(crustCost,toppingCost);
-//    // $("#user").text("Account Name: " + userName);
-//     $("#totalBalance").text(newOrder.order());
-//   });
-// });
+   // $("#user").text("Account Name: " + userName);
+    $("#totalBalance").text(newOrder.order());
+  });
+});
