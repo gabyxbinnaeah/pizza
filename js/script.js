@@ -26,16 +26,16 @@ $(document).ready(function() {
     }
     else if (crust ==="3") {
       crustCost+=350;
-//     }
-//     if (topping === "1") {
-//       toppingCost+=100;
-//     }
-//     else if (topping === "2") {
-//       toppingCost+= 200;
-//     }
-//     else if (topping === "3") {
-//       toppingCost += 300;
-//     }
+    }
+    if (topping === "1") {
+      toppingCost+=100;
+    }
+    else if (topping === "2") {
+      toppingCost+= 200;
+    }
+    else if (topping === "3") {
+      toppingCost += 300;
+    }
 //     if (size === "1") {
 //       toppingCost = toppingCost*1.5;
 //     }
