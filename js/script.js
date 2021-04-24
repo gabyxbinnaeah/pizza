@@ -13,11 +13,11 @@ PizzaOrder.prototype.order = function(){
 $(document).ready(function() {
   $("form#showOrder1").submit(function(event) {
     event.preventDefault();
-//     let size = $("#size").val();
-//     let crust = $("#crust").val();
-//     let topping = $("#toppings").val();
-//     let toppingCost = 0;
-//     let crustCost = 0;
+    let size = $("#size").val();
+    let crust = $("#crust").val();
+    let topping = $("#toppings").val();
+    let toppingCost = 0;
+    let crustCost = 0;
 //     if (crust ==="1") {
 //       crustCost +=250;
 //     }
