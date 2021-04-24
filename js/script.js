@@ -3,9 +3,9 @@ function PizzaOrder(crust,topping) {
   this.crustCost = crust;
   this.toppingCost = topping;
 }
-// PizzaOrder.prototype.order = function(){
-//   return this.crustCost + this.toppingCost;
-// }
+PizzaOrder.prototype.order = function(){
+  return this.crustCost + this.toppingCost;
+}
 
 
 
