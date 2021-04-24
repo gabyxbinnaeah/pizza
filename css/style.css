@@ -4,3 +4,12 @@
     background-image: url(../images/piza2.jpeg);
     background-size: cover;
 }
+#landing-button{
+    height: 300px;
+}
+#pagebutton{
+  text-align: center;
+}
+.downbut{
+    margin-top: 240px;
+}
