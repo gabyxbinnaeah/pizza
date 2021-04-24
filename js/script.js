@@ -18,14 +18,14 @@ $(document).ready(function() {
     let topping = $("#toppings").val();
     let toppingCost = 0;
     let crustCost = 0;
-//     if (crust ==="1") {
-//       crustCost +=250;
-//     }
-//     else if (crust ==="2") {
-//       crustCost+=300;
-//     }
-//     else if (crust ==="3") {
-//       crustCost+=350;
+    if (crust ==="1") {
+      crustCost +=250;
+    }
+    else if (crust ==="2") {
+      crustCost+=300;
+    }
+    else if (crust ==="3") {
+      crustCost+=350;
 //     }
 //     if (topping === "1") {
 //       toppingCost+=100;
