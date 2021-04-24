@@ -46,7 +46,7 @@ $(document).ready(function() {
       toppingCost = toppingCost*3.5;
     }
 
-//     let newOrder = new PizzaOrder(crustCost,toppingCost);
+    let newOrder = new PizzaOrder(crustCost,toppingCost);
 //    // $("#user").text("Account Name: " + userName);
 //     $("#totalBalance").text(newOrder.order());
 //   });
