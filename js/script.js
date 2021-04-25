@@ -83,19 +83,19 @@ $(document).ready(function() {
        
     });
   });
-  // $("form#villageformEstate").submit(function(event) {
-  //    event.preventDefault();
-  //     let deliveryCost=150;
-  //     let calCost= deliveryCost+ totalCalculation;
-  //     let village=$("#villageEstate").val();
-  //     if(village==="1"){
-  //       alert("You will be charged  Kshs "+deliveryCost+ " "+ "T0tal cost "+calCost);
+  $("form#villageformEstate").submit(function(event) {
+     event.preventDefault();
+      let deliveryCost=150;
+      let calCost= deliveryCost+ totalCalculation;
+      let village=$("#villageEstate").val();
+      if(village==="1"){
+        alert("You will be charged  Kshs "+deliveryCost+ " "+ "T0tal cost "+calCost);
 
-  //     }else{
-  //       alert ("Kindly come and pick your order");
-  //     }
-  //     $("div.finalLocation").toggle("2000");
-  // });
+      }else{
+        alert ("Kindly come and pick your order");
+      }
+      $("div.finalLocation").toggle("2000");
+  });
   // $("form#placeName").submit(function(event) {
   //    event.preventDefault();
   //    let customerLocation=$("#exampleInputEmail1").val();
