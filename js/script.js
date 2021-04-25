@@ -20,37 +20,33 @@ $(document).ready(function() {
     let topping = $("#toppings").val();
     let toppingCost = 0;
     let crustCost = 0;
-    if (crust ==="1") {
+    if (crust ==="Crispy") {
       crustCost +=250;
     }
-    else if (crust ==="2") {
+    else if (crust ==="Stuffed") {
       crustCost+=300;
     }
-    else if (crust ==="3") {
+    else if (crust ==="Glutten-free") {
       crustCost+=350;
     }
-    if (topping === "1") {
+    if (topping === "Eggs") {
       toppingCost+=100;
     }
-    else if (topping === "2") {
+    else if (topping === "Mushroom") {
       toppingCost+= 200;
     }
-    else if (topping === "3") {
+    else if (topping === "salad") {
       toppingCost += 300;
     }
-    if (size === "1") {
+    if (size === "Small") {
       toppingCost = toppingCost*1.5;
     }
-    else if (size === "2") {
+    else if (size === "Medium") {
       toppingCost = toppingCost*2.5;
     }
-    else if (size === "3" ) {
+    else if (size === "Large" ) {
       toppingCost = toppingCost*3.5;
     }
-
-    let newOrder = new PizzaOrder(crustCost,toppingCost);
-   // $("#user").text("Account Name: " + userName);
-    $("#totalBalance").text(newOrder.order());
 
     $("#viewbtn").click(function () {
       alert("do you want to add more order?");
@@ -82,14 +78,18 @@ $(document).ready(function() {
        );
        
     });
+    let newOrder = new PizzaOrder(crustCost,toppingCost);
+    // $("#user").text("Account Name: " + userName);
+     $("#totalBalance").text(newOrder.order());
+
   });
   $("form#villageformEstate").submit(function(event) {
      event.preventDefault();
       let deliveryCost=150;
       let calCost= deliveryCost+ totalCalculation;
       let village=$("#villageEstate").val();
-      if(village==="1"){
-        alert("You will be charged  Kshs "+deliveryCost+ " "+ "T0tal cost "+calCost);
+      if(village==="Yes"){
+        alert("You will be charged  Kshs "+deliveryCost+ " "+ "for delivery.");
 
       }else{
         alert ("Kindly come and pick your order");
@@ -101,4 +101,11 @@ $(document).ready(function() {
      let customerLocation=$("#exampleInputEmail1").val();
       alert("Your order will be delivered to "+customerLocation);
   }); 
+
+  $("#deliveredSize").append("Pizza size "+size);
+  $("#deliveredCrust").append("Crust "+crust);
+  $("#deliveredTopping").append("Topping "+topping);
+  $("#deliveyAcknowlement").append("To be delivered? "+village);
+  $("#deliveryCosts").append("Delivery charge "+deliveryCos);
+  $("#totalOrderedCost").append("Total Cost "+totalOrderedCost);
 });
