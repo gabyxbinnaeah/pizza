@@ -24,14 +24,14 @@
     <div class="row">
         <div class="col-md-12" id="menu">
             <form id="showOrder1">
-                <div class="row">
+                <div class="row" id="addData">
                      <div class="col-md-4 form-group"> 
                         <label for="inputState">Pizza Size</label>
                         <select class="form-select" id="size" aria-label="Default select example">
                             <option value="1">Small</option>
                             <option value="2">Medium</option>
                             <option value="3">Large</option>
-                          </select>
+                        </select>
                       </div>
                       <div class="col-md-4 form-group ">
                         <label for="inputState">Crust</label>
@@ -48,45 +48,65 @@
                             <option value="2">Mushroom</option>
                             <option value="3">salad</option>
                           </select>
-                     </div> 
+                      </div> 
                     
                 </div>
                 <div class="send">
-                    <button class="btn btn-warning" id="viewbtn">Add order</button>
+                    <!-- <button class="btn btn-warning" id="viewbtn">Add order</button> -->
+                    <span class="btn btn-warning" id="viewbtn">Add Order</span>
                     <button type="submit" class="btn btn-warning" id="viewbtnchart">View Total</button>
                 </div>
                 <div class="totalBalance">
-                    <p>Total Cost : <span id="totalBalance"></span></p>
+                    <p>Total Order Cost : <span id="totalBalance"></span></p>
                 </div>
             
 
               </form>
             <div class="row">
                 <div class="col-md-3"></div>
+                <!-- <form action=""></form> -->
                 <div class="col-md-6  form-group">
-                    <label for="inputState">To be delivered ?</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
-                      </select>
-                          
-                </div> 
+                    <form id="villageformEstate">
+                        <label for="inputState">To be delivered ?</label>
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-select" id="villageEstate" aria-label="Default select example">
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-warning" id="viewbtn1" type="submit">Submit</button>
+                            </div>
+                        </div>     
+                   </form>        
+                </div>  
                 <div class="col-md-3 viewbtn">
-                    <button class="btn btn-warning" id="viewbtn1">Submit</button> 
+                    <!-- <button class="btn btn-warning" id="viewbtn1">Submit</button>  -->
+                    <!-- <span class="btn btn-warning" id="viewbtn1">Submit</span> -->
+                    <p class="location-submitted"></p>
                 </div>
                 <div class="row" id="location">
                     <div class="col-md-3"></div>
-                    <div class="col-md-6  form-group">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="location">  
-                        </div>
-                              
+                    <div class="col-md-6  form-group finalLocation">
+                        <form id="placeName">
+                            <div class="row">
+                                <div class="col form-group">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="location">  
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-warning" id="viewbtn" type="submit">Location</button>
+                                </div>
+                            </div>   
+                        </form>         
                     </div> 
                     <div class="col-md-3 namesubmit">
-                        <button class="btn btn-warning" id="viewbtn">Location</button> 
+                        <!-- <button class="btn btn-warning" id="viewbtn">Location</button>  -->
+                       
                     </div>
                 </div>
-                <div class="chec"><button class="btn btn-warning lastouput">Checkout</button></div>
+                
+                <div class="chec"><span class="btn btn-warning lastouput" >Checkout</span></div>
                 <div class="row" id="show-display">
                     <div class="col-md-2"></div>
                     <div class="col-md-8  show-display">

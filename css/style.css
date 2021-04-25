@@ -56,9 +56,9 @@
    margin-top: 10px;
    height: 70px;
 }
-#viewbtn1{
-    margin-top: 20px;
-}
+/* #viewbtn1{
+    margin-top: 0px;
+} */
 #viewbtn{
   margin-top: 2px;
 }
@@ -80,4 +80,7 @@
 #show-display{
     /* display: none; */
     background-color:rgba(128, 128, 128, 0.082);
+}
+.finalLocation{
+    /* display: none; */
 }

@@ -2,9 +2,11 @@
 function PizzaOrder(crust,topping) {
   this.crustCost = crust;
   this.toppingCost = topping;
+  // this.order=[];
 }
 PizzaOrder.prototype.order = function(){
-  return this.crustCost + this.toppingCost;
+  totalCalculation= this.crustCost + this.toppingCost;
+  return totalCalculation;
 }
 
 
@@ -49,5 +51,54 @@ $(document).ready(function() {
     let newOrder = new PizzaOrder(crustCost,toppingCost);
    // $("#user").text("Account Name: " + userName);
     $("#totalBalance").text(newOrder.order());
+
+    $("#viewbtn").click(function () {
+      alert("do you want to add more order?");
+       $("#addData").append('<div class="col-md-4 form-group">'+ 
+                                          // '<label for="inputState">Pizza Size</label>'+
+                                          '<select class="form-select" id="size" aria-label="Default select example">'+
+                                              '<option value="1">Small</option>'+
+                                              '<option value="2">Medium</option>'+
+                                              '<option value="3">Large</option>'+
+                                          '</select>'+
+                                        '</div>'+
+                                        '<div class="col-md-4 form-group ">'+
+                                          // '<label for="inputState">Crust</label>'+
+                                          '<select class="form-select" id="crust" aria-label="Default select example">'+
+                                              '<option value="1">Crispy</option>'+
+                                              '<option value="2">Stuffed</option>'+
+                                              '<option value="3">Glutten-free</option>'+
+                                            '</select>'+
+                                        '</div>'+
+                                        '<div class="col-md-4 form-group">'+
+                                          // '<label for="inputState">Toppings</label>'+
+                                            '<select class="form-select" id="toppings" aria-label="Default select example">'+
+                                              '<option value="1">Eggs</option>'+
+                                              '<option value="2">Mushroom</option>'+
+                                              '<option value="3">salad</option>'+
+                                            '</select>'+
+                                        '</div>'
+
+       );
+       
+    });
   });
+  // $("form#villageformEstate").submit(function(event) {
+  //    event.preventDefault();
+  //     let deliveryCost=150;
+  //     let calCost= deliveryCost+ totalCalculation;
+  //     let village=$("#villageEstate").val();
+  //     if(village==="1"){
+  //       alert("You will be charged  Kshs "+deliveryCost+ " "+ "T0tal cost "+calCost);
+
+  //     }else{
+  //       alert ("Kindly come and pick your order");
+  //     }
+  //     $("div.finalLocation").toggle("2000");
+  // });
+  // $("form#placeName").submit(function(event) {
+  //    event.preventDefault();
+  //    let customerLocation=$("#exampleInputEmail1").val();
+  //     alert("Your order will be delivered to "+customerLocation);
+  // }); 
 });
