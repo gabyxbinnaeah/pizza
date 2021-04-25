@@ -96,9 +96,9 @@ $(document).ready(function() {
       }
       $("div.finalLocation").toggle("2000");
   });
-  // $("form#placeName").submit(function(event) {
-  //    event.preventDefault();
-  //    let customerLocation=$("#exampleInputEmail1").val();
-  //     alert("Your order will be delivered to "+customerLocation);
-  // }); 
+  $("form#placeName").submit(function(event) {
+     event.preventDefault();
+     let customerLocation=$("#exampleInputEmail1").val();
+      alert("Your order will be delivered to "+customerLocation);
+  }); 
 });
