@@ -13,9 +13,17 @@
 .downbut{
     margin-top: 240px;
 }
+#karibu{
+    height:250px;
+    margin-top :20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size:90px;
+    border: 2px solid red;
+}
 #headpara{
     text-align: center;
-    color: white;
+    color:white;
     font-style: italic;
 }
 #pizzapics{

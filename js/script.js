@@ -110,7 +110,7 @@ $(document).ready(function() {
   $("form#placeName").submit(function(event) {
      event.preventDefault();
      let customerLocation=$("#exampleInputEmail1").val();
-      alert("Your order will be delivered to "+customerLocation);
+      alert("Your order will be delivered at "+customerLocation);
 
 
       $("#deliveryPoint").append("Delivery point: "+customerLocation);

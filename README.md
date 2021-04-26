@@ -1,11 +1,12 @@
 
 # _Project Tittle _
-###_Pizza Inn GreenSpan Mall_
+###_Pizza Inn GreenSpan Mall Order Application_
 
-![](http://images/landing.png)
+![](images/landing.png)
 ___
 
-## By _Gabriel Odhiambo_
+## By _Author_
+ *Gabriel Odhiambo
 ___
 
 ## Description
