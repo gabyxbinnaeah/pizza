@@ -11,12 +11,14 @@ PizzaOrder.prototype.order = function(){
 
 
 
+
+
 //User Interface Logic
 $(document).ready(function() {
   $("form#showOrder1").submit(function(event) {
     event.preventDefault();
-    let size = $("#size").val();
-    let crust = $("#crust").val();
+    let size = $("#size1").val();
+    let crust = $("#crust2").val();
     let topping = $("#toppings").val();
     let toppingCost = 0;
     let crustCost = 0;
@@ -79,14 +81,18 @@ $(document).ready(function() {
        
     });
     let newOrder = new PizzaOrder(crustCost,toppingCost);
-    // $("#user").text("Account Name: " + userName);
      $("#totalBalance").text(newOrder.order());
 
+
+     $("#deliveredSize").append("Pizza Size: "+size);
+     $("#deliveredCrust").append("Crust: " +crust);
+     $("#deliveredTopping").append("Tooping: " +topping);
+   
   });
   $("form#villageformEstate").submit(function(event) {
      event.preventDefault();
       let deliveryCost=150;
-      let calCost= deliveryCost+ totalCalculation;
+      let calCost1= deliveryCost+ totalCalculation;
       let village=$("#villageEstate").val();
       if(village==="Yes"){
         alert("You will be charged  Kshs "+deliveryCost+ " "+ "for delivery.");
@@ -95,17 +101,24 @@ $(document).ready(function() {
         alert ("Kindly come and pick your order");
       }
       $("div.finalLocation").toggle("2000");
+
+      $("#deliveyAcknowlement").append("Acknowleged: " +village);
+      $("#deliveryCosts").append( "Delivery charges: "+ deliveryCost);
+      $("#totalOrderedCost").append("Total Order Cost: "+calCost1);
+    
   });
   $("form#placeName").submit(function(event) {
      event.preventDefault();
      let customerLocation=$("#exampleInputEmail1").val();
       alert("Your order will be delivered to "+customerLocation);
+
+
+      $("#deliveryPoint").append("Delivery point: "+customerLocation);
+      
   }); 
 
-  $("#deliveredSize").append("Pizza size "+size);
-  $("#deliveredCrust").append("Crust "+crust);
-  $("#deliveredTopping").append("Topping "+topping);
-  $("#deliveyAcknowlement").append("To be delivered? "+village);
-  $("#deliveryCosts").append("Delivery charge "+deliveryCos);
-  $("#totalOrderedCost").append("Total Cost "+totalOrderedCost);
+  $("button#lastoutput").click(function(){
+    $(".show-display").show();
+  });
+
 });
