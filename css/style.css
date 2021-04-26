@@ -85,3 +85,14 @@
 .finalLocation{
     display: none;
 }
+      /* media query */
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        body {
+          background-color: rgb(173, 193, 230);
+        }
+      }
