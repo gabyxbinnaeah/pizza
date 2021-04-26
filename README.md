@@ -1,22 +1,22 @@
 
 # _Project Tittle _
-###_Pizza Inn GreenSpan Mall Order Application_
+### _Pizza Inn GreenSpan Mall Order Application_
 
 ![](images/landing.png)
 ___
 
 ## By _Author_
- *Gabriel Odhiambo
+ * Gabriel Odhiambo
 ___
 
 ## Description
 
 _This program  takes in pizza order specifications, store ordered pizzas as data objects and return an order total contingent upon size ,crust and topping included in the order._
 ___
-## _Technologoies Used_
-*HTML
-*CSS
-*Javascript $ JQuery
+## _Technologies Used_
+* HTML
+* CSS
+* Javascript $ JQuery
 ___
 
 ## Specifications
@@ -38,6 +38,9 @@ ___
 * _Open its index.html file in the browser of your choice._
 ___
 
+## Live link
+
+click on this live link:https://gabyxbinnaeah.github.io/pizza/
 
 
 
